@@ -336,6 +336,9 @@
     document.querySelector('#cart').appendChild(cartSubmitInput);
     document.querySelector('#checkout').addEventListener('click', function(event) {
       document.querySelector('#cart').submit();
+      document.querySelector('#card').addEventListener('submit', function(e) {
+        console.log(e);
+      })
     });
   });
 </script>

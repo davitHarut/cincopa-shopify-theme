@@ -28,11 +28,6 @@
   <div>
     <div>
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
-      <ul class="product-tags">
-        {% for tag in customer.order.product.tags %}
-          <li>{{ tag }}</li>
-        {% endfor %}
-      </ul>
       {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
       {%- if order.cancelled -%}
