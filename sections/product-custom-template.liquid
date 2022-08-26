@@ -593,6 +593,10 @@
                       value="{{ product.selected_or_first_available_variant.id }}"
                       disabled
                     >
+                    <p class="line-item-property__field">
+                      <label for="channel-id">Channel ID</label>
+                      <input required class="required" id="channel-id" type="text" name="properties[Channel ID]">
+                    </p>
                     <div class="product-form__buttons">
                       <button
                         type="submit"
